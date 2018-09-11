@@ -9,7 +9,7 @@ public class Student {
     public Student(String name,int id){
         this.name = name;
         this.id = id;
-        this.year = 0;
+        this.year = 1;
 
     }
     public String getName(){
@@ -33,7 +33,7 @@ public class Student {
     public void print(){
         System.out.println("Student's Name: " + getName());
         System.out.println("ID: " + getId());
-        System.out.println("Year of study: " + year);
+        System.out.println("Year of study in 2017: " + year);
     }
 
     /*
@@ -45,11 +45,11 @@ public class Student {
     */
     public static void main (String [] args){
 
-        Student st = new Student("ujfrf",2345678);
+        Student st = new Student("Akniet",17110380);
        // System.out.println("Student's Name: " + getName());
         st.print();
         st.incrYear();
-        System.out.println("Year of study: " + st.year);
+        System.out.println("Year of study in 2018: " + st.year);
     }
 
 }
